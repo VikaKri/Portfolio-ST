@@ -1,15 +1,115 @@
-h1 {
-  color: rgb(84, 62, 52);
-  font-family: "Sansita Smashed", serif;
-  font-weight: 700;
+:root {
+  --main-color: white;
+  --secondary-color: rgba(255, 255, 255, 0.653);
 }
 
-p {
-  font-family: "Sansita Smashed", sans-serif;
+h1,
+h2,
+h3,
+h4,
+p,
+.btn-branding,
+.btn-branding-black,
+.music-text {
+  font-family: "Cinzel", serif;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: var(--main-color);
+  font-size: 55px;
+  font-weight: 500;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: 19px;
   font-weight: normal;
 }
 
-.instaIcon {
-  display: flex;
-  justify-content: center;
+h3 {
+  font-size: 55px;
+  font-weight: 600;
+}
+
+p,
+.music-text {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+h4 {
+  color: var(--main-color);
+}
+
+.bg-custom-class {
+  background-color: black;
+}
+
+.section-home {
+  padding-top: 60px;
+}
+
+.home-text {
+  padding: 0 70px 100px;
+  text-align: center;
+}
+
+.btn-branding {
+  color: var(--main-color);
+  background-color: none;
+  border-color: var(--main-color);
+  border-radius: 1px;
+  font-size: 13px;
+  padding: 15px 35px;
+}
+
+.btn-branding:hover {
+  color: var(--secondary-color);
+  background-color: rgb(16, 15, 15);
+  border-color: var(--secondary-color);
+}
+
+.section-about {
+  background-color: #efefef;
+  padding: 10px 250px 50px 250px;
+}
+
+.btn-branding-black {
+  background-color: none;
+  border-color: black;
+  border-radius: 1px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 15px 35px;
+}
+
+.btn-branding-black:hover {
+  color: rgb(16, 15, 15);
+  background-color: #e3e1e1;
+  border-color: rgb(162, 154, 154);
+}
+
+.section-music {
+  background-image: url(/images/music.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  text-align: center;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.808);
+  background-position: absolute;
+  background-size: cover;
+  padding: 100px 250px 60px 250px;
+}
+
+.music-text {
+  color: var(--main-color);
+}
+
+.bubble-img {
+  width: 450px;
 }
