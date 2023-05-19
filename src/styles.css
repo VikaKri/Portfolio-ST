@@ -7,7 +7,7 @@ h1,
 h2,
 h3,
 h4,
-p,
+.about-text,
 .btn-branding,
 .btn-branding-black,
 .music-text {
@@ -76,6 +76,11 @@ h4 {
   padding: 10px 250px 50px 250px;
 }
 
+.img-about {
+  max-width: 100%;
+  width: 400px;
+}
+
 .btn-branding-black {
   background-color: none;
   border-color: black;
@@ -96,6 +101,7 @@ h4 {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  background-attachment: fixed;
   text-align: center;
 }
 
@@ -103,13 +109,66 @@ h4 {
   background-color: rgba(0, 0, 0, 0.808);
   background-position: absolute;
   background-size: cover;
-  padding: 100px 250px 60px 250px;
+  padding: 60px 0;
 }
 
 .music-text {
   color: var(--main-color);
+  margin: 0 250px;
 }
 
 .bubble-img {
+  max-width: 100%;
   width: 450px;
+}
+
+@media (max-width: 767px) {
+  .bubble-img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .music-text {
+    margin: 0 20px;
+  }
+
+  .home-text {
+    padding: 0 0 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .img-about {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  h1,
+  h3 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .btn-branding {
+    font-size: 11px;
+  }
+
+  .about-text,
+  .music-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .section-about {
+    padding: 10px 25px 50px 25px;
+  }
+
+  .img-about {
+    width: 100%;
+    max-width: 600px;
+  }
 }
