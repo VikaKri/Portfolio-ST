@@ -123,6 +123,10 @@ h4 {
   width: 450px;
 }
 
+.section-videos {
+  padding: 50px 0;
+}
+
 @media (max-width: 767px) {
   .bubble-img {
     width: 100%;
@@ -143,6 +147,9 @@ h4 {
 
   .layer {
     padding: 40px 0;
+  }
+  .section-videos {
+    padding: 40px 10px;
   }
 }
 
