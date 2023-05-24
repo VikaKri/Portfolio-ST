@@ -1,7 +1,7 @@
 :root {
   --main-color: white;
   --secondary-color: rgba(255, 255, 255, 0.653);
-  --background-second-color: #efefef;
+  --background-second-color: rgb(239, 239, 239);
   --main-font-size: "Cinzel", serif;
 }
 
@@ -93,7 +93,7 @@ h4 {
 }
 
 .btn-branding-black:hover {
-  background-color: #e3e1e1;
+  background-color: rgb(227, 225, 225);
   border-color: rgb(162, 154, 154);
   color: rgb(16, 15, 15);
 }
