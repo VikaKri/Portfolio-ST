@@ -1,6 +1,8 @@
 :root {
   --main-color: white;
   --secondary-color: rgba(255, 255, 255, 0.653);
+  --background-second-color: #efefef;
+  --main-font-size: "Cinzel", serif;
 }
 
 h1,
@@ -11,9 +13,9 @@ h4,
 .btn-branding,
 .btn-branding-black,
 .music-text {
-  font-family: "Cinzel", serif;
-  letter-spacing: 2px;
+  font-family: var(--main-font-size);
   line-height: 1.6;
+  letter-spacing: 2px;
 }
 
 h1 {
@@ -35,8 +37,8 @@ h3 {
 
 p,
 .music-text {
-  font-weight: 400;
   font-size: 17px;
+  font-weight: 400;
 }
 
 h4 {
@@ -57,23 +59,22 @@ h4 {
 }
 
 .btn-branding {
-  color: var(--main-color);
   background-color: none;
   border-color: var(--main-color);
   border-radius: 1px;
+  color: var(--main-color);
   font-size: 13px;
   padding: 15px 35px;
-  margin-top: 50px;
 }
 
 .btn-branding:hover {
-  color: var(--secondary-color);
   background-color: rgb(16, 15, 15);
   border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .section-about {
-  background-color: #efefef;
+  background-color: var(--background-second-color);
   padding: 10px 250px 50px 250px;
 }
 
@@ -92,17 +93,17 @@ h4 {
 }
 
 .btn-branding-black:hover {
-  color: rgb(16, 15, 15);
   background-color: #e3e1e1;
   border-color: rgb(162, 154, 154);
+  color: rgb(16, 15, 15);
 }
 
 .section-music {
   background-image: url(/images/music.jpg);
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -123,24 +124,16 @@ h4 {
   width: 450px;
 }
 
+.btn-music {
+  margin-top: 50px;
+}
+
 .section-videos {
+  text-align: center;
   padding: 50px 0;
 }
 
 @media (max-width: 767px) {
-  .bubble-img {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .btn-branding {
-    margin-top: 20px;
-  }
-
-  .music-text {
-    margin: 0 20px;
-  }
-
   .home-text {
     padding: 0 0 40px;
   }
@@ -148,17 +141,26 @@ h4 {
   .layer {
     padding: 40px 0;
   }
+
+  .music-text {
+    margin: 0 20px;
+  }
+
+  .bubble-img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .btn-music {
+    margin-top: 20px;
+  }
+
   .section-videos {
     padding: 40px 10px;
   }
 }
 
 @media (max-width: 991px) {
-  .img-about {
-    width: 100%;
-    max-width: 800px;
-  }
-
   h1 {
     font-size: 40px;
   }
@@ -179,6 +181,11 @@ h4 {
   .about-text,
   .music-text {
     font-size: 14px;
+  }
+
+  .img-about {
+    width: 100%;
+    max-width: 800px;
   }
 }
 
