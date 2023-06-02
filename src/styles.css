@@ -12,7 +12,8 @@ h4,
 .about-text,
 .btn-branding,
 .btn-branding-black,
-.music-text {
+.white-text,
+.text-facts {
   font-family: var(--main-font-size);
   line-height: 1.6;
   letter-spacing: 2px;
@@ -36,7 +37,7 @@ h3 {
 }
 
 p,
-.music-text {
+.white-text {
   font-size: 17px;
   font-weight: 400;
 }
@@ -49,7 +50,8 @@ h4 {
   background-color: black;
 }
 
-.section-home {
+.section-home,
+.biography-section {
   padding-top: 60px;
 }
 
@@ -114,7 +116,7 @@ h4 {
   padding: 60px 0;
 }
 
-.music-text {
+.white-text {
   color: var(--main-color);
   margin: 0 250px;
 }
@@ -133,6 +135,45 @@ h4 {
   padding: 50px 0;
 }
 
+.biography-heading {
+  background-image: url(/images/biography.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.biography-heading h1 {
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 1);
+  padding: 400px 0px 20px 250px;
+}
+
+.biography-section h4,
+.biography-section .biography-links {
+  margin: 0 250px;
+}
+
+.section-skills {
+  background-color: var(--background-second-color);
+  padding: 70px 250px;
+}
+
+.section-facts {
+  padding: 0px 20px 0px 250px;
+}
+
+.text-facts {
+  color: var(--main-color);
+  padding: 60px 40px 60px 0;
+}
+
+.img-facts {
+  background-image: url(/images/biographyFact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 767px) {
   .home-text {
     padding: 0 0 40px;
@@ -140,10 +181,6 @@ h4 {
 
   .layer {
     padding: 40px 0;
-  }
-
-  .music-text {
-    margin: 0 20px;
   }
 
   .bubble-img {
@@ -157,6 +194,14 @@ h4 {
 
   .section-videos {
     padding: 40px 10px;
+  }
+
+  .biography-heading h1 {
+    padding-top: 170px;
+  }
+
+  .biography-section .btn-branding {
+    padding: 15px 29px;
   }
 }
 
@@ -179,13 +224,26 @@ h4 {
   }
 
   .about-text,
-  .music-text {
+  .white-text {
     font-size: 14px;
   }
 
   .img-about {
     width: 100%;
     max-width: 800px;
+  }
+  .white-text,
+  .biography-section h4,
+  .biography-section .biography-links {
+    margin: 0 20px;
+  }
+
+  .biography-heading h1,
+  .section-facts {
+    padding-left: 20px;
+  }
+  .section-skills {
+    padding: 50px 20px;
   }
 }
 
