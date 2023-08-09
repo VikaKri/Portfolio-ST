@@ -2,7 +2,7 @@
   --main-color: white;
   --secondary-color: rgba(255, 255, 255, 0.653);
   --background-second-color: rgb(239, 239, 239);
-  --main-font-size: "Cinzel", serif;
+  --main-font-family: "Cinzel", serif;
 }
 
 h1,
@@ -12,15 +12,22 @@ h4,
 .black-text,
 .btn-branding,
 .btn-branding-black,
-.white-text,
-.text-facts {
-  font-family: var(--main-font-size);
+.footer-text,
+.footer-text-secondary,
+.text-facts,
+.white-text {
+  font-family: var(--main-font-family);
   line-height: 1.6;
   letter-spacing: 2px;
 }
 
-h1 {
+h1,
+h4,
+.footer-text {
   color: var(--main-color);
+}
+
+h1 {
   font-size: 55px;
   font-weight: 500;
 }
@@ -37,13 +44,10 @@ h3 {
 }
 
 p,
+.footer-text,
 .white-text {
   font-size: 17px;
   font-weight: 400;
-}
-
-h4 {
-  color: var(--main-color);
 }
 
 .active-branding {
@@ -51,114 +55,8 @@ h4 {
   font-weight: bold;
 }
 
-.header {
-  font-family: var(--main-font-size);
-  letter-spacing: 2px;
-}
-
 .bg-custom-class {
   background-color: black;
-}
-
-.section-home,
-.biography-section {
-  padding-top: 0;
-}
-
-.home-text {
-  padding: 0 70px 100px;
-  text-align: center;
-}
-
-.btn-branding {
-  background-color: none;
-  border-color: var(--main-color);
-  border-radius: 1px;
-  color: var(--main-color);
-  font-size: 13px;
-  padding: 15px 35px;
-}
-
-.btn-branding:hover {
-  background-color: rgb(16, 15, 15);
-  border-color: var(--secondary-color);
-  color: var(--secondary-color);
-}
-
-.section-about {
-  background-color: var(--background-second-color);
-  padding: 10px 250px 50px 250px;
-}
-
-.img-about {
-  max-width: 100%;
-  width: 400px;
-}
-
-.btn-branding-black {
-  background-color: none;
-  border-color: black;
-  border-radius: 1px;
-  font-size: 13px;
-  font-weight: 500;
-  padding: 15px 35px;
-}
-
-.btn-branding-black:hover {
-  background-color: rgb(227, 225, 225);
-  border-color: rgb(162, 154, 154);
-  color: rgb(16, 15, 15);
-}
-
-.section-music {
-  background-image: url(/images/music.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.layer {
-  background-color: rgba(0, 0, 0, 0.808);
-  background-position: absolute;
-  background-size: cover;
-  padding: 60px 0;
-}
-
-.white-text {
-  color: var(--main-color);
-  margin: 0 250px;
-}
-
-.bubble-img {
-  max-width: 100%;
-  width: 450px;
-  min-height: 450px;
-}
-
-.btn-music {
-  margin-top: 50px;
-}
-
-.section-videos {
-  text-align: center;
-  padding: 50px 0;
-}
-.video-resp {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%;
-}
-.frame-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .biography-heading {
@@ -178,39 +76,49 @@ h4 {
   margin: 0 250px;
 }
 
-.section-skills {
-  background-color: var(--background-second-color);
-  padding: 70px 250px;
+.biography-section,
+.section-home {
+  padding-top: 0;
 }
 
-.skill-list {
-  display: flex;
-  justify-content: start;
-}
-
-.section-facts {
-  padding: 0px 20px 0px 250px;
-}
-
-.text-facts {
+.btn-branding {
+  background-color: none;
+  border-color: var(--main-color);
+  border-radius: 1px;
   color: var(--main-color);
-  padding: 60px 40px 60px 0;
+  font-size: 13px;
+  padding: 15px 35px;
 }
 
-.img-facts {
-  background-image: url(/images/biographyFact.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.btn-branding:hover {
+  background-color: rgb(16, 15, 15);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
-.music-note {
-  font-size: 30px;
-  padding-right: 20px;
+.btn-branding-black {
+  background-color: none;
+  border-color: black;
+  border-radius: 1px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 15px 35px;
 }
 
-.section-contact {
-  background-color: var(--background-second-color);
+.btn-branding-black:hover {
+  background-color: rgb(227, 225, 225);
+  border-color: rgb(162, 154, 154);
+  color: rgb(16, 15, 15);
+}
+
+.bubble-img {
+  max-width: 100%;
+  width: 450px;
+  min-height: 450px;
+}
+
+.btn-music {
+  margin-top: 50px;
 }
 
 .contact-img {
@@ -223,29 +131,121 @@ h4 {
   padding: 20px 100px 20px;
 }
 
+.footer-text-secondary {
+  font-size: 12px;
+  color: var(--secondary-color);
+}
+
+.frame-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  font-family: var(--main-font-family);
+  letter-spacing: 2px;
+}
+
+.home-text {
+  padding: 0 70px 100px;
+  text-align: center;
+}
+
+.img-about {
+  max-width: 100%;
+  width: 400px;
+}
+
+.img-facts {
+  background-image: url(/images/biographyFact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.808);
+  background-position: absolute;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.music-note {
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.section-about {
+  background-color: var(--background-second-color);
+  padding: 10px 250px 50px 250px;
+}
+
+.section-contact {
+  background-color: var(--background-second-color);
+}
+
+.section-music {
+  background-image: url(/images/music.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.section-facts {
+  padding: 0px 20px 0px 250px;
+}
+
+.section-skills {
+  background-color: var(--background-second-color);
+  padding: 70px 250px;
+}
+
+.section-videos {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: start;
+}
+
+.social-link {
+  font-size: 20px;
+  color: var(--main-color);
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: var(--secondary-color);
+}
+
+.text-facts {
+  color: var(--main-color);
+  padding: 60px 40px 60px 0;
+}
+
+.video-resp {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.white-text {
+  color: var(--main-color);
+  margin: 0 250px;
+}
+
 @media (max-width: 767px) {
-  .home-text {
-    padding: 0 0 40px;
-  }
-
-  .layer {
-    padding: 40px 0;
-  }
-
-  .bubble-img {
-    width: 100%;
-    max-width: 270px;
-    min-height: 270px;
-  }
-
-  .btn-music {
-    margin-top: 20px;
-  }
-
-  .section-videos {
-    padding: 40px 10px;
-  }
-
   .biography-heading h1 {
     padding-top: 170px;
   }
@@ -254,9 +254,39 @@ h4 {
     padding: 15px 29px;
   }
 
+  .btn-music {
+    margin-top: 20px;
+  }
+
+  .bubble-img {
+    width: 100%;
+    max-width: 270px;
+    min-height: 270px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .home-text {
+    padding: 0 0 40px;
+  }
+
+  .layer {
+    padding: 40px 0;
+  }
+
   .section-skills h3,
   .section-facts h1 {
     font-size: 30px;
+  }
+
+  .social-link {
+    padding: 0 9px;
+  }
+
+  .section-videos {
+    padding: 40px 10px;
   }
 }
 
@@ -274,13 +304,25 @@ h4 {
     font-size: 15px;
   }
 
+  p,
+  .black-text,
+  .white-text {
+    font-size: 15px;
+  }
+
   .btn-branding {
     font-size: 11px;
   }
 
-  .black-text,
+  .biography-section h4,
+  .biography-section .biography-links,
   .white-text {
-    font-size: 14px;
+    margin: 0 20px;
+  }
+
+  .biography-heading h1,
+  .section-facts {
+    padding-left: 20px;
   }
 
   .contact-text-heading {
@@ -295,34 +337,24 @@ h4 {
     width: 100%;
     max-width: 800px;
   }
-  .white-text,
-  .biography-section h4,
-  .biography-section .biography-links {
-    margin: 0 20px;
-  }
 
-  .biography-heading h1,
-  .section-facts {
-    padding-left: 20px;
+  .img-facts {
+    background-image: none;
   }
 
   .section-skills {
     padding: 50px 20px;
   }
-
-  .img-facts {
-    background-image: none;
-  }
 }
 
 @media (max-width: 1250px) {
-  .section-about {
-    padding: 10px 5px 50px 5px;
-  }
-
   .img-about {
     width: 100%;
     max-width: 600px;
+  }
+
+  .section-about {
+    padding: 10px 5px 50px 5px;
   }
 }
 
