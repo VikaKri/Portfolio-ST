@@ -162,7 +162,7 @@ p,
 }
 
 .img-facts {
-  background-image: url(/images/biographyFact.jpg);
+  background-image: url(/images/biography-fact.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,9 +175,31 @@ p,
   padding: 60px 0;
 }
 
+.music-img {
+  min-height: 280px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.music-heading {
+  background-image: url(/images/music-cover.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.music-heading h1 {
+  padding: 500px 0px 20px 150px;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 1);
+}
+
 .music-note {
   font-size: 30px;
   padding-right: 20px;
+}
+
+.music-songs {
+  margin: 70px 0 0;
 }
 
 .section-about {
@@ -246,7 +268,8 @@ p,
 }
 
 @media (max-width: 767px) {
-  .biography-heading h1 {
+  .biography-heading h1,
+  .music-heading h1 {
     padding-top: 170px;
   }
 
@@ -321,6 +344,7 @@ p,
   }
 
   .biography-heading h1,
+  .music-heading h1,
   .section-facts {
     padding-left: 20px;
   }
