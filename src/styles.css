@@ -168,6 +168,11 @@ p,
   background-size: cover;
 }
 
+.img-resume {
+  max-width: 100%;
+  min-width: 100vw;
+}
+
 .layer {
   background-color: rgba(0, 0, 0, 0.808);
   background-position: absolute;
