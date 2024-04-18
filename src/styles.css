@@ -343,9 +343,7 @@ p,
 }
 
 @media (max-width: 767px) {
-  p,
-  .white-text,
-  .black-text {
+  .emailInfo {
     font-size: 13px;
   }
 
