@@ -267,49 +267,20 @@ p,
   margin: 0 250px;
 }
 
-@media (max-width: 767px) {
-  .biography-heading h1,
-  .music-heading h1 {
-    padding-top: 170px;
+@media (min-width: 1836px) {
+  .text-facts {
+    padding-bottom: 200px;
   }
+}
 
-  .biography-section .btn-branding {
-    padding: 15px 29px;
-  }
-
-  .btn-music {
-    margin-top: 20px;
-  }
-
-  .bubble-img {
+@media (max-width: 1250px) {
+  .img-about {
     width: 100%;
-    max-width: 270px;
-    min-height: 270px;
+    max-width: 600px;
   }
 
-  .footer-text {
-    font-size: 12px;
-  }
-
-  .home-text {
-    padding: 0 0 40px;
-  }
-
-  .layer {
-    padding: 40px 0;
-  }
-
-  .section-skills h3,
-  .section-facts h1 {
-    font-size: 30px;
-  }
-
-  .social-link {
-    padding: 0 9px;
-  }
-
-  .section-videos {
-    padding: 40px 10px;
+  .section-about {
+    padding: 10px 5px 50px 5px;
   }
 }
 
@@ -371,19 +342,54 @@ p,
   }
 }
 
-@media (max-width: 1250px) {
-  .img-about {
+@media (max-width: 767px) {
+  p,
+  .white-text,
+  .black-text {
+    font-size: 13px;
+  }
+
+  .biography-heading h1,
+  .music-heading h1 {
+    padding-top: 170px;
+  }
+
+  .biography-section .btn-branding {
+    padding: 15px 29px;
+  }
+
+  .btn-music {
+    margin-top: 20px;
+  }
+
+  .bubble-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 270px;
+    min-height: 270px;
   }
 
-  .section-about {
-    padding: 10px 5px 50px 5px;
+  .footer-text {
+    font-size: 12px;
   }
-}
 
-@media (min-width: 1836px) {
-  .text-facts {
-    padding-bottom: 200px;
+  .home-text {
+    padding: 0 0 40px;
+  }
+
+  .layer {
+    padding: 40px 0;
+  }
+
+  .section-skills h3,
+  .section-facts h1 {
+    font-size: 30px;
+  }
+
+  .social-link {
+    padding: 0 9px;
+  }
+
+  .section-videos {
+    padding: 40px 10px;
   }
 }
