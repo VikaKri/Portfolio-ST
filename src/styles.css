@@ -111,7 +111,7 @@ p,
   color: rgb(16, 15, 15);
 }
 
-.train-img {
+.main-singles-img {
   max-width: 100%;
   width: 450px;
   min-height: 450px;
@@ -175,8 +175,8 @@ p,
   padding: 60px 0;
 }
 
-.main-single {
-  margin-top: 70px;
+.main-singles {
+  margin-top: 100px;
 }
 
 .music-img {
@@ -369,7 +369,7 @@ p,
     margin-top: 20px;
   }
 
-  .train-img {
+  .main-singles-img {
     width: 100%;
     max-width: 270px;
     min-height: 270px;
